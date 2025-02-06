@@ -15,10 +15,11 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 1rem;
+  color: #ffffff;
 }
 
 .color-container {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(34, 37, 37);
   backdrop-filter: blur(10px);
   padding: 2rem;
   border-radius: 20px;
@@ -34,7 +35,7 @@ body {
 
 h2 {
   font-size: 1.8rem;
-  color: #333;
+  /* color: #333; */
 }
 
 .status-bar {
@@ -42,7 +43,7 @@ h2 {
   justify-content: space-between;
   width: 100%;
   font-weight: bold;
-  color: #222;
+
 }
 
 #colorBox {
@@ -93,6 +94,15 @@ h2 {
 }
 
 /* Media Queries */
+
+@media (min-width: 384px) {
+  .colorButtons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
 @media (min-width: 768px) {
   body {
     font-size: clamp(16px, 2vw, 20px);
